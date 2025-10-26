@@ -1,0 +1,48 @@
+#clockContainer {
+  position: relative;
+	/* border: 2px solid red; */
+	margin: auto;
+	height: 40vw;
+	width: 40vw;
+	background: url(./clock.png) no-repeat;
+	background-size: 100%;
+}
+
+#hour,
+#minute,
+#second {
+	position: absolute;
+	background: black;
+	border-radius: 10px;
+}
+
+#hour {
+	width: 2%;
+	height: 32%;
+	left: 48.775%;
+	top: 18%;
+  opacity: 0.8;
+  /* tranform origin should in this case */
+  /* As the handles in a clock, rotate from bottom right ? */
+  transform-origin: bottom;
+  /* display: none; */
+}
+
+#minute {
+  width: 1.5%;
+	height: 34%;
+	left: 48.995%;
+	top: 16%;
+  opacity: 0.8;
+  transform-origin: bottom;
+  /* display:none; */
+}
+
+#second {
+  width: 1.2%;
+	height: 36%;
+	left: 49.25%;
+	top: 14%;
+  opacity: 0.8;
+  transform-origin: bottom;
+}
